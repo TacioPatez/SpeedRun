@@ -1,17 +1,27 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
+import Diferenciar from './components/Diferenciar'
 import Primeiro from './components/Primeiro'
 import X, {Comp,Comp1} from './components/Multi' // x = funcao que foi exportada por default
 import MinMax from './components/MinMax'
 import Aleatorio from './components/Aleatorio'
+import Titulo from './components/Frag'
+import Botao from './components/Botao'
+import Contador from './components/Contador'
 
 // Maneiras de Dar o Export
 
 function App() {                                //max = inteiro - min = string
     return <View style={style.AppEstilo}>
+        <Diferenciar/>
+        {/*
+        <Contador incial={100}/>
+        <Botao/>
+        <Titulo principal = "Cadastro Produto"
+                secundario = "Tela de Cadastro do produto" />
         <Aleatorio max={50} min={2}/>
-        {/* <MinMax max={5} min='2'/> 
+        <MinMax max={5} min='2'/> 
         <Comp/>
         <Comp1/>
         <X/>
