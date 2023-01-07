@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { SafeAreaView, Text, StyleSheet } from 'react-native'
 
 import Diferenciar from './components/Diferenciar'
 import Primeiro from './components/Primeiro'
@@ -9,13 +9,28 @@ import Aleatorio from './components/Aleatorio'
 import Titulo from './components/Frag'
 import Botao from './components/Botao'
 import Contador from './components/Contador'
+import ListaProdutos from './components/Produtos/ListaProdutos'
+import DigiteSeuNome from './components/DigiteSeuNome'
+import Quadrado from './components/Layout/Quadrado'
+import FlexBox1 from './components/Layout/FlexBox1'
+import FlexBox2 from './components/Layout/FlexBox2'
+import FlexBox3 from './components/Layout/FlexBox3'
 
 // Maneiras de Dar o Export
 
 function App() {                                //max = inteiro - min = string
-    return <View style={style.AppEstilo}>
-        <Diferenciar/>
+    return <SafeAreaView style={style.AppEstilo}>
+        <FlexBox3/>
         {/*
+        <FlexBox2/>
+        <FlexBox1/>
+        <Quadrado/>
+        <Quadrado color = '#0F0'/>
+        <Quadrado color = 'red'/>
+        <Quadrado color = 'blue'/>
+        <DigiteSeuNome/>
+        <ListaProdutos/>
+        <Diferenciar/>
         <Contador incial={100}/>
         <Botao/>
         <Titulo principal = "Cadastro Produto"
@@ -29,7 +44,7 @@ function App() {                                //max = inteiro - min = string
            {1+1}
         </Text>
         <Primeiro></Primeiro> */}
-        </View>
+        </SafeAreaView>
     // return <Text> Primeiro Componente </Text> // retornando JSX eh possivel apenas no react, nao no JS
 }
 

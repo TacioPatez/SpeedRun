@@ -28,9 +28,6 @@ export default class Mega extends Component{
 
     exibirNumeros = () => {
         var nums = this.state.numeros // lembrar de alterar
-        if (nums.length == 6){
-            nums = [4, 5, 10, 34, 58, 59]
-        }
         return nums.map(num => {
             return <EstiloNumero key={num} num={num}/>
         })
